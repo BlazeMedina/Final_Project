@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Triangle Home Value Estimator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
+  <link rel="stylesheet" href="static/css/style.css">
+<body>
+
+  
+  <div class="container">
+    <!-- JUMBOTRON -->
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Triangle Home Value Estimator</h1>
+        <p>Utilizing machine learning to estimate the sale price of your home.</p>
+      </div>
+    </div>   
+
+    <!-- Instructions  -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h3>Enter the Home Information.</h3>  
+          <h5>With the power of Machine Learning 
+            we will predict the sale price of the house</h5>
+        </div>
+
+        <!-- INTERACTIVE INPUT PANEL -->
+        <div class="panel panel-primary">
+          <div class="panel-heading panel-heading-custom">
+            <h3 class="panel-title">Home Information</h3>
+          </div>
+          <div class="col-md-6">
+            <h5>City</h5>
+            <h5>Acreage</h5>
+            <h5>Square Footage</h5>
+            <h5>Number of Bedrooms</h5>
+            <h5>Number of Bathrooms</h5>
+            <button id="activationBut" class="btn btn-sm btn-primary btn-outline-success" type="button">Press Me</button>
+          </div>
+          <div class="col-md-6">
+            <h5></h5>
+                <select id="selCity" onchange="optionChanged(this.value)"></select><br>
+                <select id="selAcreage" onchange="optionChanged(this.value)"></select><br>
+                <select id="selSquareFoot" onchange="optionChanged(this.value)"></select><br>
+                <select id="selBeds" onchange="optionChanged(this.value)"></select><br>
+                <select id="selBaths" onchange="optionChanged(this.value)"></select><br>
+            </h5>
+          </div>
+          
+
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+      <!-- Navigation Bar       -->
+      <div class="col-md-8">
+        <div class="row">
+          <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <button id="summaryBut" class="btn btn-sm btn-primary btn-outline-success" type="button">Project Summary</button>
+              <button id="sampleBut" class="btn btn-sm btn-success btn-outline-secondary" type="button">Sample Data</button>
+              <button id="mlBut" class="btn btn-sm btn-danger btn-outline-secondary" type="button">Machine Learning</button>
+              <button id="plotBut" class="btn btn-sm btn-warning btn-outline-secondary" type="button">Map Plot</button>
+              <button id="teamBut" class="btn btn-sm btn-info btn-outline-secondary" type="button">Team Members</button>
+            </form>
+          </nav>
+        </div>
+        <!--Create main section to display additional information-->
+        <div class="row main">
+          <div id="main">
+            main section
+          </div>
+        </div> 
+      </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/content.js"></script>
+
+
+
+</body>
+
+</html>
