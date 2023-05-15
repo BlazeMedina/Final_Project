@@ -59,34 +59,30 @@ document.getElementById("activationBut").addEventListener("click", function(){
 /// Project Summary button 
 document.getElementById("summaryBut").addEventListener("click", function(){
   console.log("Summary button pressed");
-  document.getElementById("main").innerHTML="The Project Summary";
+  document.getElementById("main").innerHTML='<iframe width="900" height="346" frameborder="0" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vSQDt1tI_6yxKykMS1eFoWHlmMWeg256Yya0HC4VaJoBRzVcASLRpe5RhjYqYHa4CVg6gPYRMEqy7Dc/pub?embedded=true"></iframe>';
   //clearContents();
   //buildCharts(curSample, "summary");
 });
 /// Display Sample Data
 document.getElementById("sampleBut").addEventListener("click", function(){
   console.log("Sample button pressed");
-  document.getElementById("main").innerHTML="The Sample Data";
-  //clearContents();
-  //buildCharts(curSample, "top");
+  document.getElementById("main").innerHTML='<iframe width="900" height="346" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRc8aA7OlRit6w4LB9LpXJ9VKhUtpwuLVEsyKjPDenXp4BT2twRBvxbb2g3lDpDOPp97afcXrvLIwiN/pubhtml?gid=0&single=true"></iframe>';
 });
 ///Display Explanation of Machine Learning
 document.getElementById("mlBut").addEventListener("click", function(){
   console.log("ML button pressed");
-  //clearContents();
+  document.getElementById("main").innerHTML='<iframe width="900" height="346" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vTVCIvvQ4v9_gTvUswIAKu4FfLunutayul7jIdEd5y1X37Da5uilExomKFRxUazR1oKAK51f_G5VyPL/pub?embedded=true"></iframe>';
   //buildCharts(curSample, "bub");
 });
 /// Display the Map Plot of Similar Houses on the Market
 document.getElementById("plotBut").addEventListener("click", function(){
   console.log("Map Plot button pressed");
-  //clearContents();
-  //buildCharts(curSample, "wash");
 });
 /// Information About the Team
 document.getElementById("teamBut").addEventListener("click", function(){
   console.log("Team button pressed");
-  //clearContents();
-  //buildCharts(curSample, "all");
+  document.getElementById("main").innerHTML='<iframe width="900" height="346" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vShLkaqKox03nJDQBMBF8tgro3fuyCLo_LglUGqbzNoUIWr6Ica3hQ9zioy5EfH7MnUlMimR0-AdF72/pub?embedded=true"></iframe>';
+
 });
 /*
 

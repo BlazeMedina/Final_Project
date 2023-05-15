@@ -24,3 +24,14 @@ body {
     text-align: center;
     color:#d4da7d;
   }
+
+  #selAcreage {
+    width: 6em;
+  }
+  #selSquareFoot {
+    width: 6em;
+  }
+  #rooms {
+    width: 6em;
+  }
+
