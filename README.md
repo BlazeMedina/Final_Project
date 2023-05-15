@@ -1,10 +1,32 @@
 # Final Project - Segment 1 
 
-## Current Status
+## Presentation 1
+### Selected Topic 
+For the final project we decided to focus on real estate and estimating the sale price of a house.
 
+### Reason For Selecting This Topic 
+
+
+### Description of the Source of Data
+(should we describe both?)
+
+### Questions We Hope to Answer
+Are we able to predict the value of a house based on certain parameters?
+
+## Team Dymanic
+### Communication Protocols
+
+
+## Current Status
 ### Specific Needs
+- Segment 1: <br />
+Cleaning the two potential data sets <br />
+Creating a provisional machine learning model
 
 ### Exisiting Challenges
+- Segment 1: <br />
+Finding a big enough database that contains all of the desired information we need to feed into our machine learning model.<br />
+Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model.
 
 ## List of Technologies
 ### Which tools fit best for your project?
@@ -24,7 +46,7 @@
 **Source Control** all code repository and readme files are stored in Github.
 
 ### Which tools will you use for each section?
-- Cleaning the data:
+- Cleaning the data: Pandas, Python
 - Data Storage: 
 - 
 
