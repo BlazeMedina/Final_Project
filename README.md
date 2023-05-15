@@ -26,11 +26,15 @@ On days where we do not plan to meet, we will check in with the rest of team ove
 - Segment 1: <br />
 Cleaning the two potential data sets <br />
 Creating a provisional machine learning model
+<br />
+- Segment 2:
 
 ### Exisiting Challenges
 - Segment 1: <br />
 Finding a big enough database that contains all of the desired information we need to feed into our machine learning model.<br />
 Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model.
+<br />
+- Segment 2: <br />
 
 ## List of Technologies
 ### Which tools fit best for your project?
@@ -55,6 +59,14 @@ Testing to see if we create a webpage that allows us to enter inputs and show us
 - 
 
 ## Future Work
+- Segment 1: <br />
+Meet as a team on 05/14 to prepare for Presentation 1 and Segment 1 turn in <br />
+Start working on Segment 2 requirements
+<br />
+
+- Segment 2: <br />
+
+<br />
 
 ## Links:
 
