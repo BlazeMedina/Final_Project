@@ -8,7 +8,19 @@ For the final project we decided to focus on real estate and estimating the sale
 Inspired by Zillow.com, we thought that real estate data would be relatively accessible and abundant.
 
 ### Description of the Source of Data
-(should we describe both?)
+Zillow.com API <br />
+Zillow Challenge Kaggle Dataset <br />
+
+In these datasets looking specifically at:
+- Sale Price
+- Square footage
+- Bedroom Count
+- Bathroom Count
+- City
+- Zipcode
+- Pool size
+- Year Built
+- Number of Stories
 
 ### Questions We Hope to Answer
 Are we able to predict the value of a house based on certain parameters?
