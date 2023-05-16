@@ -5,7 +5,7 @@
 For the final project we decided to focus on real estate and estimating the sale price of a house.
 
 ### Reason For Selecting This Topic 
-
+Inspired by Zillow.com, we thought that real estate data would be relatively accessible and abundant.
 
 ### Description of the Source of Data
 (should we describe both?)
