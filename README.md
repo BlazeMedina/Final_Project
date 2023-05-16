@@ -13,11 +13,11 @@ Zillow Challenge Kaggle Dataset <br />
 
 Focusing on these parameters:
 - Sale Price
-- Square footage
+- Square Footage
 - Bedroom Count
 - Bathroom Count
 - City
-- Zipcode
+- Zip Code
 - Pool size
 - Year Built
 - Number of Stories
@@ -51,7 +51,7 @@ Testing to see if we create a webpage that allows us to enter inputs and show us
 ## List of Technologies
 ### Which tools fit best for your project?
 
-**Data Sources:** wakecountyhousing.csv
+**Data Sources:** Zillow.com API, Zillow Challenge Kaggle Dataset
 
 **Software:**  pgAdmin 4, JavaScript, Python, HTML, CSS, Python matpotlib, Juyter notebook, Pandas, Excel.
 
