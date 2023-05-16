@@ -11,7 +11,7 @@ Inspired by Zillow.com, we thought that real estate data would be relatively acc
 Zillow.com API <br />
 Zillow Challenge Kaggle Dataset <br />
 
-In these datasets looking specifically at:
+Focusing on these parameters:
 - Sale Price
 - Square footage
 - Bedroom Count
