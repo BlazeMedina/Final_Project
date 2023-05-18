@@ -37,30 +37,32 @@ On days where we do not plan to meet, we will check in with the rest of team ove
 ### Specific Needs
 - Segment 1: <br />
 Cleaning the two potential data sets <br />
-Creating a provisional machine learning model 
-Establishing an ERD and a database 
+Creating a provisional machine learning model. <br />
+Establishing an ERD and a database. <br />
 <br />
 
 - Segment 2: <br />
-Pivoting from machine learning linear regression to machine learning classification
-Start drafting the Google Slides for Thursday's Segment 2 Presentation
+Pivoting from machine learning linear regression to machine learning classification. <br />
+Start drafting the Google Slides for Thursday's Segment 2 Presentation <br />
+Need to start thinking about what method to use for classification ml model. <br />
+Need to start thinking about what important features do we want our audience to focus on in regards to the dashboard. <br />
 
 ### Exisiting Challenges
 - Segment 1: <br />
 Finding a big enough database that contains all of the desired information we need to feed into our machine learning model.<br />
-Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model.
+Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model. <br />
 <br />
 - Segment 2: <br />
-
+ 
 
 ## List of Technologies
 ### Which tools fit best for your project?
 
 **Data Sources:** Zillow.com API, Zillow Challenge Kaggle Dataset
 
-**Software:**  pgAdmin 4, JavaScript, Python, HTML, CSS, Python matpotlib, Juyter notebook, Pandas, Excel.
+**Software:**  pgAdmin 4, JavaScript, Python, HTML, CSS, Python matpotlib, Jupyter notebook, Pandas.
 
-**Database:** PostgreSQL 11, AWS for data storage.
+**Database:** PostgreSQL 11 for data storage.
 
 **Data Cleaning and Transformation libraries** NumPy, Pandas, Matplotlib.
 
@@ -88,6 +90,10 @@ Start working on Segment 2 requirements
 <br />
 
 - Segment 2: <br />
+Meet as a team 05/18 to prepare for presentation 2 <br />
+Need to start drafting dashboard visuals for presentation day <br />
+Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
+
 
 <br />
 
