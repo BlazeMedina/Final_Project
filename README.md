@@ -66,9 +66,15 @@ Testing to see if we create a webpage that allows us to enter inputs and show us
 **Source Control** all code repository and readme files are stored in Github.
 
 ### Which tools will you use for each section?
-- Cleaning the data: Pandas, Python
-- Data Storage: 
-- 
+- Cleaning the data: We used Pandas library to clean data. This was done by
+     1. creating dataFrames to select columns needed for analysis 
+     2. using isnul().sum() to retrieve total number of null for each column and eliminate rows as necessary.
+     3. describe() funciton is used to get averages and other stats to ensure data validation.
+     4. using dtype function to check and convert object and number fields.
+
+- Data Storage: PostgreSQL and AWS to store data and extract csv files for analysis.
+
+- Database Design: Quick DBD was used to create ER diagram for daatase table design.
 
 ## Future Work
 - Segment 1: <br />
