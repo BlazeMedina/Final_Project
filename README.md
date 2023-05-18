@@ -37,9 +37,13 @@ On days where we do not plan to meet, we will check in with the rest of team ove
 ### Specific Needs
 - Segment 1: <br />
 Cleaning the two potential data sets <br />
-Creating a provisional machine learning model
+Creating a provisional machine learning model 
+Establishing an ERD and a database 
 <br />
-- Segment 2:
+
+- Segment 2: <br />
+Pivoting from machine learning linear regression to machine learning classification
+Start drafting the Google Slides for Thursday's Segment 2 Presentation
 
 ### Exisiting Challenges
 - Segment 1: <br />
@@ -47,6 +51,7 @@ Finding a big enough database that contains all of the desired information we ne
 Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model.
 <br />
 - Segment 2: <br />
+
 
 ## List of Technologies
 ### Which tools fit best for your project?
@@ -57,22 +62,22 @@ Testing to see if we create a webpage that allows us to enter inputs and show us
 
 **Database:** PostgreSQL 11, AWS for data storage.
 
-**Data Cleaning and Transformation libraries** NumPy, Pandas. Matplotlib.
+**Data Cleaning and Transformation libraries** NumPy, Pandas, Matplotlib.
 
 **Machine Learning:** Scikit-Learn is the library used to perform data classification and Logistic Regression.
 
-**Dashboard** Leaflet Mapping API and geoapify for coding, Tableau??
+**Dashboard** Leaflet Mapping API and geoapify for coding, Tableau
 
 **Source Control** all code repository and readme files are stored in Github.
 
 ### Which tools will you use for each section?
 - Cleaning the data: We used Pandas library to clean data. This was done by
      1. creating dataFrames to select columns needed for analysis 
-     2. using isnul().sum() to retrieve total number of null for each column and eliminate rows as necessary.
-     3. describe() funciton is used to get averages and other stats to ensure data validation.
+     2. using isnull().sum() to retrieve total number of null for each column and eliminate rows as necessary.
+     3. describe() function is used to get averages and other stats to ensure data validation.
      4. using dtype function to check and convert object and number fields.
 
-- Data Storage: PostgreSQL and AWS to store data and extract csv files for analysis.
+- Data Storage: PostgreSQL to store data and extract csv files for analysis.
 
 - Database Design: Quick DBD was used to create ER diagram for daatase table design.
 
