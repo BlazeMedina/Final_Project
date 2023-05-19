@@ -66,7 +66,7 @@ document.getElementById("summaryBut").addEventListener("click", function(){
 /// Display Sample Data
 document.getElementById("sampleBut").addEventListener("click", function(){
   console.log("Sample button pressed");
-  document.getElementById("main").innerHTML='<iframe width="900" height="346" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRc8aA7OlRit6w4LB9LpXJ9VKhUtpwuLVEsyKjPDenXp4BT2twRBvxbb2g3lDpDOPp97afcXrvLIwiN/pubhtml?gid=0&single=true"></iframe>';
+  document.getElementById("main").innerHTML='<iframe width="900" height="400" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRc8aA7OlRit6w4LB9LpXJ9VKhUtpwuLVEsyKjPDenXp4BT2twRBvxbb2g3lDpDOPp97afcXrvLIwiN/pubhtml?gid=0&single=true"></iframe>';
 });
 ///Display Explanation of Machine Learning
 document.getElementById("mlBut").addEventListener("click", function(){
@@ -81,7 +81,7 @@ document.getElementById("plotBut").addEventListener("click", function(){
 /// Information About the Team
 document.getElementById("teamBut").addEventListener("click", function(){
   console.log("Team button pressed");
-  document.getElementById("main").innerHTML='<iframe width="900" height="346" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vShLkaqKox03nJDQBMBF8tgro3fuyCLo_LglUGqbzNoUIWr6Ica3hQ9zioy5EfH7MnUlMimR0-AdF72/pub?embedded=true"></iframe>';
+  document.getElementById("main").innerHTML='<iframe width="900" height="400" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vShLkaqKox03nJDQBMBF8tgro3fuyCLo_LglUGqbzNoUIWr6Ica3hQ9zioy5EfH7MnUlMimR0-AdF72/pub?embedded=true"></iframe>';
 
 });
 /*
