@@ -100,6 +100,6 @@ Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
 ## Links:
 
 - Database Link:
-- Slide Deck Link:
+- Slide Deck Link: https://docs.google.com/presentation/d/1fuSEjlgvWbBRcpDQHJYFIET4RZRHzRyaqUyjunIX7c8/edit?usp=sharing
 - Important References:
 - Google Doc Timeline: https://docs.google.com/document/d/164kIARKGBgcrHXU49Ajj9LOiWtrlebf3gR6RnERRuJ8/edit
