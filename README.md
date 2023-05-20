@@ -53,6 +53,7 @@ Finding a big enough database that contains all of the desired information we ne
 Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model. <br />
 <br />
 - Segment 2: <br />
+Which machine learning model should we utilize for our data analysis?
  
 
 ## List of Technologies
@@ -93,6 +94,7 @@ Start working on Segment 2 requirements
 Meet as a team 05/18 to prepare for presentation 2 <br />
 Need to start drafting dashboard visuals for presentation day <br />
 Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
+Meet as a team 05/22 to discuss the what has been completed and the plan for the upcoming week <br />
 
 
 <br />
