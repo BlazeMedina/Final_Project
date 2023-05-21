@@ -36,7 +36,7 @@ CREATE TABLE "PropertyLocation" (
     "zipcode" int   NOT NULL,
     "city" varchar(40)   NOT NULL,
     "neighborhood" varchar(100)   NOT NULL,
-    "county" varchar100)   NOT NULL,
+    "county" varchar(100)   NOT NULL,
     "state" varchar(50)   NOT NULL,
     CONSTRAINT "pk_PropertyLocation" PRIMARY KEY (
         "propertyLocation_id"
