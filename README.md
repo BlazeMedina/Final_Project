@@ -1,4 +1,4 @@
-# Capstone Project - Segment 1 
+# Capstone Project - Segment 1  
 
 ## Presentation 1
 ### Selected Topic 
