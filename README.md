@@ -1,4 +1,4 @@
-# Final Project - Segment 1 
+# Capstone Project - Segment 1 
 
 ## Presentation 1
 ### Selected Topic 
@@ -54,6 +54,18 @@ Testing to see if we create a webpage that allows us to enter inputs and show us
 <br />
 - Segment 2: <br />
 Which machine learning model should we utilize for our data analysis?
+
+## Future Work
+- Segment 1: <br />
+Meet as a team on 05/14 to prepare for Presentation 1 and Segment 1 turn in <br />
+Start working on Segment 2 requirements
+<br />
+
+- Segment 2: <br />
+Meet as a team 05/18 to prepare for presentation 2 <br />
+Need to start drafting dashboard visuals for presentation day <br />
+Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
+Meet as a team 05/22 to discuss the what has been completed and the plan for the upcoming week <br />
  
 
 ## List of Technologies
@@ -75,26 +87,29 @@ Which machine learning model should we utilize for our data analysis?
 
 ### Which tools will you use for each section?
 - Cleaning the data: We used Pandas library to clean data. This was done by
-     1. creating dataFrames to select columns needed for analysis 
-     2. using isnull().sum() to retrieve total number of null for each column and eliminate rows as necessary.
-     3. describe() function is used to get averages and other stats to ensure data validation.
-     4. using dtype function to check and convert object and number fields.
+     - creating dataFrames to select columns needed for analysis 
+     - using isnull().sum() to retrieve total number of null for each column and eliminate rows as necessary.
+     - describe() function is used to get averages and other stats to ensure data validation.
+     - using dtype function to check and convert object and number fields.
 
 - Data Storage: PostgreSQL to store data and extract csv files for analysis.
 
-- Database Design: Quick DBD was used to create ER diagram for daatase table design.
+- Database Design: Quick DBD was used to create ERD diagram for database table design.
 
-## Future Work
-- Segment 1: <br />
-Meet as a team on 05/14 to prepare for Presentation 1 and Segment 1 turn in <br />
-Start working on Segment 2 requirements
-<br />
+## Project Outline
 
-- Segment 2: <br />
-Meet as a team 05/18 to prepare for presentation 2 <br />
-Need to start drafting dashboard visuals for presentation day <br />
-Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
-Meet as a team 05/22 to discuss the what has been completed and the plan for the upcoming week <br />
+## Machine Learning Model 
+### Description of Preliminary Data Preprocessing
+
+### Description of Preliminary Feature Engineering & Preliminary Feature Selection (including our decision-making process)
+
+### Description of How the Data was Split Into Training & Testing Sets
+
+### Explaination of Model Choice, Including Limitations & Benefits 
+
+## Dashboard 
+
+### Description of the Interactive Elements
 
 
 <br />
