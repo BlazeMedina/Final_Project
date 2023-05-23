@@ -71,7 +71,7 @@ Meet as a team 05/22 to discuss the what has been completed and the plan for the
 ## List of Technologies
 ### Which tools fit best for your project?
 
-**Data Sources:** Zillow.com API, Zillow Challenge Kaggle Dataset
+**Data Sources:** Zillow.com API
 
 **Software:**  pgAdmin 4, JavaScript, Python, HTML, CSS, Python matpotlib, Jupyter notebook, Pandas.
 
@@ -81,7 +81,7 @@ Meet as a team 05/22 to discuss the what has been completed and the plan for the
 
 **Machine Learning:** Scikit-Learn is the library used to perform data classification and Logistic Regression.
 
-**Dashboard** Leaflet Mapping API and geoapify for coding, Tableau
+**Dashboard** HTML & CSS 
 
 **Source Control** all code repository and readme files are stored in Github.
 
@@ -107,9 +107,11 @@ Meet as a team 05/22 to discuss the what has been completed and the plan for the
 ### Explaination of Model Choice, Including Limitations & Benefits 
 
 ## Dashboard 
+For our dashboard segment of the capstone project, we will utilize a HTML page that summarizes our project. The webpage will have multiple tabs to display different information. These tabs will contain the project summary, a sample of the data used in the machine learning model, a description of our machine learning model, and the team information.
 
 ### Description of the Interactive Elements
-
+Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms. <br />
+<br /> ![Screenshot 2023-05-23 174154](https://github.com/BlazeMedina/Final_Project/assets/119636655/03afa85f-35d2-4039-99bb-7ec459681a7c)
 
 <br />
 
