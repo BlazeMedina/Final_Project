@@ -9,7 +9,6 @@ Inspired by Zillow.com, we thought that real estate data would be relatively acc
 
 ### Description of the Source of Data
 Zillow.com API <br />
-Zillow Challenge Kaggle Dataset <br />
 
 Focusing on these parameters:
 - Sale Price
@@ -46,6 +45,7 @@ Pivoting from machine learning linear regression to machine learning classificat
 Start drafting the Google Slides for Thursday's Segment 2 Presentation <br />
 Need to start thinking about what method to use for classification ml model. <br />
 Need to start thinking about what important features do we want our audience to focus on in regards to the dashboard. <br />
+Need to finish loading the data into the database and connect it to our machine learning model. <br />
 
 ### Exisiting Challenges
 - Segment 1: <br />
@@ -53,7 +53,10 @@ Finding a big enough database that contains all of the desired information we ne
 Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model. <br />
 <br />
 - Segment 2: <br />
-Which machine learning model should we utilize for our data analysis?
+Which machine learning model should we utilize for our data analysis? <br />
+
+
+
 
 ## Future Work
 - Segment 1: <br />
@@ -66,6 +69,10 @@ Meet as a team 05/18 to prepare for presentation 2 <br />
 Need to start drafting dashboard visuals for presentation day <br />
 Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
 Meet as a team 05/22 to discuss the what has been completed and the plan for the upcoming week <br />
+
+- Segment 3: 
+Add the rest of the necessary slides to the Google slide deck <br />
+Finalize the dashboard 
  
 
 ## List of Technologies
@@ -94,6 +101,7 @@ Meet as a team 05/22 to discuss the what has been completed and the plan for the
 - Data Storage: PostgreSQL to store data and extract csv files for analysis.
 
 - Database Design: Quick DBD was used to create ERD diagram for database table design.
+- Dashboard Design: HTML & CSS 
 
 ## Project Outline
 
@@ -105,9 +113,10 @@ Meet as a team 05/22 to discuss the what has been completed and the plan for the
 ### Description of How the Data was Split Into Training & Testing Sets
 
 ### Explaination of Model Choice, Including Limitations & Benefits 
+For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. 
 
 ## Dashboard 
-For our dashboard segment of the capstone project, we will utilize a HTML page that summarizes our project. The webpage will have multiple tabs to display different information. These tabs will contain the project summary, a sample of the data used in the machine learning model, a description of our machine learning model, and the team information.
+For our dashboard segment of the capstone project, we will utilize a HTML page that displays the summary and analysis our project. The webpage will have multiple tabs to display different information. These tabs will contain the project summary, a sample of the data used in the machine learning model, a description of our machine learning model, and the team information.
 
 ### Description of the Interactive Elements
 Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms. <br />
