@@ -113,7 +113,9 @@ Finalize the dashboard
 ### Description of How the Data was Split Into Training & Testing Sets
 
 ### Explaination of Model Choice, Including Limitations & Benefits 
-For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. 
+For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. <br />
+<br />
+![Screenshot 2023-05-23 184444](https://github.com/BlazeMedina/Final_Project/assets/119636655/b809ba90-701d-43c7-bc04-40d88766d35f)
 
 ## Dashboard 
 For our dashboard segment of the capstone project, we will utilize a HTML page that displays the summary and analysis our project. The webpage will have multiple tabs to display different information. These tabs will contain the project summary, a sample of the data used in the machine learning model, a description of our machine learning model, and the team information.
