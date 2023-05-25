@@ -97,7 +97,7 @@ Meet 05/31 to record presentation and dashboard use
 
 **Data Cleaning and Transformation Libraries** NumPy, Pandas, Matplotlib.
 
-**Machine Learning:** Scikit-Learn is the library used to perform data classification and Logistic Regression.
+**Machine Learning:** Scikit-Learn, sklearn.model_selection are the library used to perform data classification and Logistic Regression.
 
 **Dashboard** HTML & CSS 
 
@@ -116,33 +116,39 @@ Meet 05/31 to record presentation and dashboard use
 - Dashboard Design: HTML & CSS 
 
 ## Project Outline
-With the real estate data from Wake and Durham County, we created a database using PostGres and AWS that joined these datasets together. Using the AWS as the host, we were then able to connect our joined tables to our data cleaning and exploratory, and machine learning notebooks. <br />
-Once we were able to feed the data into the Jupyter Notebooks, we were able to see what kind of 
+With the real estate data from Wake and Durham County, we created a database using PostGres and AWS that joined these datasets together. Using the AWS as the host, we were then able to connect our joined tables to our data exploratory and machine learning notebooks. <br />
+Once we were able to feed the data into the Jupyter Notebooks, we were able to determine what preprocessing was necessary. Once finished with preprocessing we determined our features and target variables and split the data into testing and training sets. To help us determine the best machine learning model, we utilized the machine learning pipeline. Learning that the Random Forest Classifier is the best model, we can now use this information to help us create a dashboard to visually display our results. 
 
 ## Machine Learning Model 
 ### Description of Preliminary Data Preprocessing
-To start the data preprocessing and cleaning phase of our project, we first had to address the "props.AreaUnit" series that contained the unit of measurement for the "props.lotAreaValue". In this column we had both square footage and acres. We decided to convert the entire series to acres. 
-We were given the full address of the property in one cell, to be able to complete a thorough analysis of each address component, we separated out the zip code, the city, and the address of the property into their own columns. We found that we did not have a county column for our target variable. So we created two lists of cities in each county and assigned a county value through this process. In our dataset, Durham County is 0 and Wake County is 1. 
-The purpose of our machine learning model is to compare real estate properties and their features, we want to make sure that the data we captured is relevant to our analysis, so we drop the rows in the database where bedrooms, bathrooms, and the living area is equal to 0. This will remove properties that were lots or rows that contained any errors. 
-We checked the data types of each of the columns to make sure they were all in a correct type. We needed to change the zip code, number of bedrooms, and number of bathrooms all to the interger type. 
+To start the data preprocessing and cleaning phase of our project, we first had to address the "props.AreaUnit" series that contained the unit of measurement for the "props.lotAreaValue". In this column we had both square footage and acres. We decided to convert the entire series to acres. <br />
+We were given the full address of the property in one cell, to be able to complete a thorough analysis of each address component, we separated out the zip code, the city, and the address of the property into their own columns. We found that we did not have a county column for our target variable. So we created two lists of cities in each county and assigned a county value through this process. In our dataset, Durham County is 0 and Wake County is 1. <br />
+The purpose of our machine learning model is to compare real estate properties and their features, we want to make sure that the data we captured is relevant to our analysis, so we drop the rows in the database where bedrooms, bathrooms, and the living area is equal to 0. This will remove properties that were open lots or rows that contained any errors. <br />
+We checked the data types of each of the columns to make sure they were all in a correct type. We needed to change the zip code, number of bedrooms, and number of bathrooms all to the interger type. The last preprocessing action we did was convert the property type column, which contained "single family home", "condo", "apartment", and other like values into categorical columns.  <br />
 At the conclusion of our data preprocessing and cleaning we were left with 8782 rows of data. 
 
 ### Description of Preliminary Feature Engineering & Preliminary Feature Selection (including our decision-making process)
+Due to the nature of the project, using supervised machine learning, we knew that our "y" or target variable would be the county value we assigned each real estate property. As for the feature selection, we decided to remove any location themed columns. We dropped "city", "county_val", "zip", "props.latitude", and "props.longitude". In the end our feature selection consisted of the zestimate (or predicted value of the house), number of bedrooms, number of bathrooms, living area sq footage, the lot area size, and the property type. We chose these features because these are typically the main criteria when individuals are looking for a house. 
 
 ### Description of How the Data was Split Into Training & Testing Sets
 We used the 80-20 split for the training and testing ratio. 80% of the data was used to train the model and the remaining 20% of the data was used to test the model. 
+
 ### Explaination of Model Choice, Including Limitations & Benefits 
-For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. Our limitations with this model choice is that 68% is the highest we could optimize the accuracy.  <br />
-<br />
+To get a comprehensive overview of how well the various machine learning models would perform with our training and testing data, we implemented a machine learning pipeline. We created a list of six models to test and compared the accuracies and their confusion matrices. These six models were: logistic regression, SVM, KNN, Decision Tree, Random Forest, and Naive Bayes. As seen in the chart below the Random Forest Classifier had the highest accuarcy score with 68%. We also ran a Keras deep learning network model to confirm Random Forest was the best choice. Our Keras model also ended up having 68% accuracy. 
+Ultimately we decided to choose Random Forest Classifier as our final machine learning model. In hopes to further optimize our model, we used GridSearch to help us determine what the best estimators and parameters were. As it turns out we were already reaching our best score at 68%. 
+The limitations with this model choice is that 68% is the highest we could optimize, so there is still a large margin for error when implementing the model.   <br />
+The benefits with this model choice is that we've evaluated several options and reviewed accuracy scores and determined this model would perform the best to answer the question at hand. 
+![Screenshot 2023-05-21 125457](https://github.com/BlazeMedina/Final_Project/assets/119636655/6a7c45b5-11d1-4aed-9c3f-af02f045c27d)
+
 ![Screenshot 2023-05-23 184444](https://github.com/BlazeMedina/Final_Project/assets/119636655/b809ba90-701d-43c7-bc04-40d88766d35f)
 
 ## Dashboard 
 For our dashboard segment of the capstone project, we will utilize a HTML page that displays the summary and analysis our project. The webpage will have multiple tabs to display different information. These tabs will contain the project summary, a sample of the data used in the machine learning model, a description of our machine learning model, and the team information.
 
 ### Description of the Interactive Elements
-Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms. Also on our dashboard we will include a sample of our dataset, initial plots from our analysis phase, and an overview of our machine learning model. <br />
+Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms.  <br />
 <br /> ![Screenshot 2023-05-23 174154](https://github.com/BlazeMedina/Final_Project/assets/119636655/03afa85f-35d2-4039-99bb-7ec459681a7c)
-<br />
+
 
 ## Links:
 
