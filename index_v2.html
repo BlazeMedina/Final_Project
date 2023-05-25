@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Triangle Home Value Estimator</h1>
-        <p>Utilizing machine learning to estimate the sale price of your home.</p>
+        <p>Utilizing machine learning to predict which county your property resides in.</p>
       </div>
     </div>   
 
@@ -35,18 +35,29 @@
             <h3 class="panel-title">Home Information</h3>
           </div>
             <h5>
-                <p style="text-align: center;">
-                    <!--Create inputs for numerical features-->
-                    <label for="selEstimate">Home Value</label>
-                    <input type="number" id="selEstimate" name="estimate" maxlength="7" value=30000 step="100" min="30000" /><br>
-                    <label for="beds"># of Bedrooms</label>
-                    <input type="number" id="rooms" name="beds" value="1" min="1" /><br>
-                    <label for="baths"># of Bathrooms</label>
-                    <input type="number" id="rooms" name="baths" value="1" step="0.5" min="0.5"/><br>
-                    <label for="selSquareFoot">Square Footage</label>
-                    <input type="number" id="selSquareFoot" name="sqft" value="1000" step="100" min="1000" /><br>
-                    <label for="selAcreage">Acreage</label>
-                    <input type="number" id="selAcreage" name="acreage" value="0.125" step="0.125" min="0" /><br>
+              <div class="row">
+                <div class="col-md-6">
+                <p style="text-align: right;">
+                  <!--Create inputs for numerical features-->
+                  <label for="selEstimate">Home Value</label>
+                  <label for="beds"># of Bedrooms</label>
+                  <label for="baths"># of Bathrooms</label>
+                  <label for="selSquareFoot">Square Footage</label>
+                  <label for="selAcreage">Acreage</label>
+                </div>
+                <div class="col-md-4">
+
+                  <input type="number" id="selEstimate" name="estimate" maxlength="7" value=30000 step="100" min="30000" /><br>
+                  <input type="number" id="rooms" name="beds" value="1" min="1" /><br>
+                  <input type="number" id="rooms" name="baths" value="1" step="0.5" min="0.5"/><br>
+                  <input type="number" id="selSquareFoot" name="sqft" value="1000" step="100" min="1000" /><br>
+                  <input type="number" id="selAcreage" name="acreage" value="0.125" step="0.125" min="0" /><br>
+
+                </div>
+              </p>
+              </div>
+                  <div class="row">
+                    <p style="text-align: center;">
 
                     <!--Create radio buttons for property type-->
                     <br><b><u>Select Property Type</u></b><br>
@@ -66,17 +77,11 @@
                     <input type="radio" id="th" name="propType" value="1" /><br><br>
                     <!--Create an activation button to run the predict function-->
                     <button id="activationBut" class="btn btn-sm btn-primary btn-outline-success" type="button">Press Me</button>
+                      </p>
+                  </div>
                 </p>
             </h5>
           </div>
-          <!-- <datalist id="aValues">
-            <option value="0" label="0.25"></option>
-            <option value="20" label="0.25"></option>
-            <option value="40" label="0.25"></option>
-            <option value="60" label="0.25"></option>
-            <option value="80" label="0.25"></option>
-            <option value="100" label="0.25"></option>
-          </datalist> -->
         </div>
 
       <!-- Navigation Bar       -->
@@ -87,7 +92,7 @@
               <button id="summaryBut" class="btn btn-sm btn-primary btn-outline-success" type="button">Project Summary</button>
               <button id="sampleBut" class="btn btn-sm btn-success btn-outline-secondary" type="button">Sample Data</button>
               <button id="mlBut" class="btn btn-sm btn-danger btn-outline-secondary" type="button">Machine Learning</button>
-              <button id="plotBut" class="btn btn-sm btn-warning btn-outline-secondary" type="button">Map Plot</button>
+              <button id="plotBut" class="btn btn-sm btn-warning btn-outline-secondary" type="button">Data Analysis</button>
               <button id="teamBut" class="btn btn-sm btn-info btn-outline-secondary" type="button">Team Members</button>
             </form>
           </nav>
@@ -95,7 +100,7 @@
         <!--Create main section to display additional information-->
         <div class="row main">
           <div id="main">
-            main section
+            Welcome to our Machine Learning site!
           </div>
         </div> 
       </div>

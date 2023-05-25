@@ -6,7 +6,7 @@ body {
 .jumbotron {
   color: #f0f03e;
   text-shadow: 3px 3px black;
-  background-image: url("../images/color_skyline3.jpg");
+  background-image: url("../images/Raleigh_Durham_Skyline_2.jpg");
   background-size: 100% 100%;
   text-align: center;
 }
@@ -40,5 +40,9 @@ body {
 }
 
 input { 
+  text-align: center; 
+}
+
+h3 {
   text-align: center; 
 }
