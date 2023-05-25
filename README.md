@@ -2,27 +2,31 @@
 
 ## Presentation 1
 ### Selected Topic 
-For the final project we decided to focus on real estate and estimating the sale price of a house.
+The purpose of our project is to analyze real estate data from two NC counties, Wake and Durham, to determine if there are distinguishable property differences in each county.
 
 ### Reason For Selecting This Topic 
 Inspired by Zillow.com, we thought that real estate data would be relatively accessible and abundant.
 
-### Description of the Source of Data
-Zillow.com API <br />
+The topic of house location estimation was chosen because of the difficulty faced during house search and the current instability in the housing market resulting in steep price fluctuations. 
 
-Focusing on these parameters:
-- Sale Price
-- Square Footage
+House purchasing can be influenced by various factors.
+
+With the Raleigh-Durham area ranking #3 on the “Best Places to Live In America” by U.S News & World Report, we wanted to see if buyers’ wants & needs for a house could classify them in a county where those property features would be more prevalent 
+
+
+### Description of the Source of Data
+From Rapid API, we utilized the Zillow.com API to generate the dataset of house sales from Wake and Durham county for our analysis. 
+The following fields were used to determine potential influence on the property location:
+
+- Price Zestimate
+- Living Space Square Footage
 - Bedroom Count
 - Bathroom Count
-- City
-- Zip Code
-- Pool size
-- Year Built
-- Number of Stories
+- Area Lot Size
 
 ### Questions We Hope to Answer
-Are we able to predict the value of a house based on certain parameters?
+Are we able to predict the county location of a house based on certain property parameters? <br />
+Are there certain parameters of a property distinguishable by county?
 
 ## Team Dymanic
 ### Communication Protocols
@@ -98,9 +102,10 @@ Finalize the dashboard
      2. using isnul().sum() to retrieve total number of null for each column and eliminate rows as necessary.
      3. describe() funciton is used to get averages and other stats to ensure data validation.
      4. using dtype function to check and convert object and number fields.
-- Data Storage: PostgreSQL to store data and extract csv files for analysis.
+- Data Storage: PostgreSQL & AWS to store data and extract csv files for analysis.
 
 - Database Design: Quick DBD was used to create ERD diagram for database table design.
+
 - Dashboard Design: HTML & CSS 
 
 ## Project Outline
@@ -111,7 +116,7 @@ Finalize the dashboard
 ### Description of Preliminary Feature Engineering & Preliminary Feature Selection (including our decision-making process)
 
 ### Description of How the Data was Split Into Training & Testing Sets
-
+Using a 
 ### Explaination of Model Choice, Including Limitations & Benefits 
 For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. <br />
 <br />
