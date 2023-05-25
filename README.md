@@ -1,4 +1,4 @@
-# Capstone Project - Segment 1  
+# Capstone Project - Property Location Classification
 
 ## Presentation 1
 ### Selected Topic 
@@ -42,41 +42,48 @@ On days where we do not plan to meet, we will check in with the rest of team ove
 Cleaning the two potential data sets <br />
 Creating a provisional machine learning model. <br />
 Establishing an ERD and a database. <br />
-<br />
 
 - Segment 2: <br />
 Pivoting from machine learning linear regression to machine learning classification. <br />
 Start drafting the Google Slides for Thursday's Segment 2 Presentation <br />
 Need to start thinking about what method to use for classification ml model. <br />
 Need to start thinking about what important features do we want our audience to focus on in regards to the dashboard. <br />
-Need to finish loading the data into the database and connect it to our machine learning model. <br />
+Need to finish loading the data into the database and connect it to our machine learning model & other notebooks. <br />
+
+- Segment 3: <br />
+For 05/25 Segment 3 Presentation, we need to add the additional slides and assign speaking roles
 
 ### Exisiting Challenges
 - Segment 1: <br />
 Finding a big enough database that contains all of the desired information we need to feed into our machine learning model.<br />
 Testing to see if we create a webpage that allows us to enter inputs and show us a response from our trained machine learning model. <br />
-<br />
+
 - Segment 2: <br />
 Which machine learning model should we utilize for our data analysis? <br />
+Can we deploy our machine learning model to our HTML site and make it user interactive? <br />
 
-
-
+- Segment 3: <br />
+Can we present our project & deliverable all in six minutes?
 
 ## Future Work
 - Segment 1: <br />
 Meet as a team on 05/14 to prepare for Presentation 1 and Segment 1 turn in <br />
-Start working on Segment 2 requirements
-<br />
+Start working on Segment 2 requirements <br />
 
 - Segment 2: <br />
 Meet as a team 05/18 to prepare for presentation 2 <br />
 Need to start drafting dashboard visuals for presentation day <br />
 Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
 Meet as a team 05/22 to discuss the what has been completed and the plan for the upcoming week <br />
+Meet as a team 05/24 to discuss updates and assign slides for Thursday's Segment 3 Presentation <br />
 
-- Segment 3: 
+
+- Segment 3: <br />
 Add the rest of the necessary slides to the Google slide deck <br />
-Finalize the dashboard 
+Finalize the dashboard <br />
+Finalize the readme
+Clean up the Github Repo
+Meet 05/31 to record presentation and dashboard use
  
 
 ## List of Technologies
@@ -86,9 +93,9 @@ Finalize the dashboard
 
 **Software:**  pgAdmin 4, JavaScript, Python, HTML, CSS, Python matpotlib, Jupyter notebook, Pandas.
 
-**Database:** PostgreSQL 11 for data storage.
+**Database:** PostgreSQL 11 & AWS for data storage.
 
-**Data Cleaning and Transformation libraries** NumPy, Pandas, Matplotlib.
+**Data Cleaning and Transformation Libraries** NumPy, Pandas, Matplotlib.
 
 **Machine Learning:** Scikit-Learn is the library used to perform data classification and Logistic Regression.
 
@@ -101,7 +108,7 @@ Finalize the dashboard
      1. creating dataFrames to select columns needed for analysis 
      2. using isnul().sum() to retrieve total number of null for each column and eliminate rows as necessary.
      3. describe() funciton is used to get averages and other stats to ensure data validation.
-     4. using dtype function to check and convert object and number fields.
+     4. using dtype function to check and convert object and number fields. <br />
 - Data Storage: PostgreSQL & AWS to store data and extract csv files for analysis.
 
 - Database Design: Quick DBD was used to create ERD diagram for database table design.
@@ -109,16 +116,23 @@ Finalize the dashboard
 - Dashboard Design: HTML & CSS 
 
 ## Project Outline
+With the real estate data from Wake and Durham County, we created a database using PostGres and AWS that joined these datasets together. Using the AWS as the host, we were then able to connect our joined tables to our data cleaning and exploratory, and machine learning notebooks. <br />
+Once we were able to feed the data into the Jupyter Notebooks, we were able to see what kind of 
 
 ## Machine Learning Model 
 ### Description of Preliminary Data Preprocessing
+To start the data preprocessing and cleaning phase of our project, we first had to address the "props.AreaUnit" series that contained the unit of measurement for the "props.lotAreaValue". In this column we had both square footage and acres. We decided to convert the entire series to acres. 
+We were given the full address of the property in one cell, to be able to complete a thorough analysis of each address component, we separated out the zip code, the city, and the address of the property into their own columns. We found that we did not have a county column for our target variable. So we created two lists of cities in each county and assigned a county value through this process. In our dataset, Durham County is 0 and Wake County is 1. 
+The purpose of our machine learning model is to compare real estate properties and their features, we want to make sure that the data we captured is relevant to our analysis, so we drop the rows in the database where bedrooms, bathrooms, and the living area is equal to 0. This will remove properties that were lots or rows that contained any errors. 
+We checked the data types of each of the columns to make sure they were all in a correct type. We needed to change the zip code, number of bedrooms, and number of bathrooms all to the interger type. 
+At the conclusion of our data preprocessing and cleaning we were left with 8782 rows of data. 
 
 ### Description of Preliminary Feature Engineering & Preliminary Feature Selection (including our decision-making process)
 
 ### Description of How the Data was Split Into Training & Testing Sets
-Using a 
+We used the 80-20 split for the training and testing ratio. 80% of the data was used to train the model and the remaining 20% of the data was used to test the model. 
 ### Explaination of Model Choice, Including Limitations & Benefits 
-For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. <br />
+For our machine learning model, we decided to choose the Random Forest Classification. During our analysis we were able to configure a model pipeline that showed us the confusion matrix and accuracy score for multiple models. The Random Forest had the highest accuarcy score with 68%. Our limitations with this model choice is that 68% is the highest we could optimize the accuracy.  <br />
 <br />
 ![Screenshot 2023-05-23 184444](https://github.com/BlazeMedina/Final_Project/assets/119636655/b809ba90-701d-43c7-bc04-40d88766d35f)
 
@@ -126,14 +140,13 @@ For our machine learning model, we decided to choose the Random Forest Classific
 For our dashboard segment of the capstone project, we will utilize a HTML page that displays the summary and analysis our project. The webpage will have multiple tabs to display different information. These tabs will contain the project summary, a sample of the data used in the machine learning model, a description of our machine learning model, and the team information.
 
 ### Description of the Interactive Elements
-Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms. <br />
+Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms. Also on our dashboard we will include a sample of our dataset, initial plots from our analysis phase, and an overview of our machine learning model. <br />
 <br /> ![Screenshot 2023-05-23 174154](https://github.com/BlazeMedina/Final_Project/assets/119636655/03afa85f-35d2-4039-99bb-7ec459681a7c)
-
 <br />
 
 ## Links:
 
 - Database Link:
 - Slide Deck Link: https://docs.google.com/presentation/d/1fuSEjlgvWbBRcpDQHJYFIET4RZRHzRyaqUyjunIX7c8/edit?usp=sharing
-- Important References:
 - Google Doc Timeline: https://docs.google.com/document/d/164kIARKGBgcrHXU49Ajj9LOiWtrlebf3gR6RnERRuJ8/edit
+- Dashboard Link:
