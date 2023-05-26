@@ -1,0 +1,48 @@
+body {
+
+    background-color:rgb(0,0,0);
+
+  }
+.jumbotron {
+  color: #f0f03e;
+  text-shadow: 3px 3px black;
+  background-image: url("../images/Raleigh_Durham_Skyline_2.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.panel > .panel-heading-custom {
+  background-color:rgb(10, 13, 102);
+  color:white
+}
+
+.navbar {
+  text-align: center;
+}
+
+.main {
+  text-align: center;
+  color:#d4da7d;
+}
+
+#selAcreage {
+  width: 6em;
+}
+#selSquareFoot {
+  width: 6em;
+}
+#rooms {
+  width: 6em;
+}
+
+#selEstimate {
+  width: 6em;
+}
+
+input { 
+  text-align: center; 
+}
+
+h3 {
+  text-align: center; 
+}
