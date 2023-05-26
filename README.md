@@ -97,7 +97,7 @@ Meet 05/31 to record presentation and dashboard use
 
 **Data Cleaning and Transformation Libraries** NumPy, Pandas, Matplotlib.
 
-**Machine Learning:** Scikit-Learn, sklearn.model_selection are the library used to perform data classification and Logistic Regression.
+**Machine Learning:** Scikit-Learn, sklearn.model_selection are the library used to perform data classification and Logistic Regression. Users will also need to pip install m2cgen to run our machine learning notebook.
 
 **Dashboard** HTML & CSS 
 
