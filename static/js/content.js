@@ -85,7 +85,7 @@ document.getElementById("mlBut").addEventListener("click", function(){
 /// Display the Data Analysis 
 document.getElementById("plotBut").addEventListener("click", function(){
   console.log("Data Analysis button pressed");
-  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" src="https://docs.google.com/document/d/1z9IEtpArfomnUayZPK-kTHdTtCDp2gLEjPMIF0UAnmc/edit?usp=sharing"></iframe>';
+  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vRt_OXZbrPhsBLGAJXG3IVvJ7z2MwgjUe-CNgquLYyBZn6ueQBKbBEUrnYHpzlu1vxf3BFtyr_mWXDe/pub?embedded=true"></iframe>';
 
 });
 
