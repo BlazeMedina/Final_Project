@@ -147,12 +147,13 @@ For our dashboard segment of the capstone project, we will utilize a HTML page t
 
 ### Description of the Interactive Elements
 Alongside of the interactive tabs, we will have a section where users can input property information into our machine learning model to determine where the property is located. Additionally, we also plan to have a property price predictor that functions similarlly, but predicts the price of the property based on parameters such as city, acreage, sq footage, number of bedrooms, and number of bathrooms.  <br />
-<br /> ![Screenshot 2023-05-23 174154](https://github.com/BlazeMedina/Final_Project/assets/119636655/03afa85f-35d2-4039-99bb-7ec459681a7c)
+<br /> ![Screenshot 2023-05-29 170811](https://github.com/BlazeMedina/Final_Project/assets/119636655/e70a214e-75df-415e-b846-9f25bcf03a6a)
+
 
 
 ## Links:
 
 - Database Link:
 - Slide Deck Link: https://docs.google.com/presentation/d/1fuSEjlgvWbBRcpDQHJYFIET4RZRHzRyaqUyjunIX7c8/edit?usp=sharing
-- Google Doc Timeline: https://docs.google.com/document/d/164kIARKGBgcrHXU49Ajj9LOiWtrlebf3gR6RnERRuJ8/edit
-- Dashboard Link:
+- Team Google Doc: https://docs.google.com/document/d/164kIARKGBgcrHXU49Ajj9LOiWtrlebf3gR6RnERRuJ8/edit
+- Dashboard Link: https://blazemedina.github.io/Final_Project/
