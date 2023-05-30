@@ -122,13 +122,23 @@ We used the 80-20 split for the training and testing ratio. 80% of the data was 
 
 ### Explaination of Model Choice, Including Limitations & Benefits 
 To get a comprehensive overview of how well the various machine learning models would perform with our training and testing data, we implemented a machine learning pipeline. We created a list of six models to test and compared the accuracies and their confusion matrices. These six models were: logistic regression, SVM, KNN, Decision Tree, Random Forest, and Naive Bayes. As seen in the chart below, the Random Forest Classifier had the highest accuarcy score with 69%. We also ran a Keras deep learning network model to confirm Random Forest was the best choice. Our Keras model ended up having 68% accuracy. 
-Ultimately we decided to choose Random Forest Classifier as our final machine learning model. In hopes to further optimize our model, we used GridSearch to help us determine what the best estimators and parameters were. As it turns out we were already reaching our best score at 69%. 
-The limitations with this model choice is that 69% is the highest we could optimize, so there is still a large margin for error when implementing the model.   <br />
-The benefits with this model choice is that we've evaluated several options and reviewed accuracy scores and determined this model would perform the best to answer the question at hand. 
+
 ![Screenshot 2023-05-21 125457](https://github.com/BlazeMedina/Final_Project/assets/119636655/6a7c45b5-11d1-4aed-9c3f-af02f045c27d)
 
-![Screenshot 2023-05-23 184444](https://github.com/BlazeMedina/Final_Project/assets/119636655/b809ba90-701d-43c7-bc04-40d88766d35f)
+![Screenshot 2023-05-30 171441](https://github.com/BlazeMedina/Final_Project/assets/119636655/2a85ba23-0802-4afe-8b2d-1f817d235d09)
 
+<br />
+After running all of the machine learning models, it was clear to choose Random Forest Classifier as our final machine learning model. In hopes to further optimize our model, we used GridSearch to help us determine what the best estimators and parameters were. As it turns out we were already reaching our best score at 69%. We did not change our model choice between the Segment 2 and Segment 3 deliverables. 
+The limitations with this model choice is that 69% is the highest we could optimize, so there is still a large margin for error when implementing the model.   <br />
+The benefits with this model choice is that we've evaluated several options and reviewed accuracy scores and determined this model would perform the best to answer the question at hand. 
+<br />
+
+### Final Confusion Matrix & Accuracy Score
+Below is the final confusion matrix and accuracy score for our Random Forest Classifier. Again this model scored the highest with a 69% accuracy score, so our model can classify a property location data point 69% of the time. In regards to the confusion matrix, our model was able to accurately categorize 624 true negatives property locations (TN), 251 false positives (FP), 288 false negatives (FN), and predict 594 actually true property locations (TP). In the end, our model 69% percent of the time can predict the location of your property or desired property based on the property features such as: number of bedrooms and bathrooms, square foot living area, lot size, and price. To further our analysis, in the next phases of this project we could incorporate statistics to understand the ratio of each type of house in Wake and Durham County. This would allow us to see the probability make up and allow us to understand why the machine learning model classifies the properties the way it does. 
+
+Accuracy Score             |  Confusion Matrix
+:-------------------------:|:-------------------------:
+![Screenshot 2023-05-30 171423](https://github.com/BlazeMedina/Final_Project/assets/119636655/ab440485-cdd9-4ab3-a878-8de29be99a04)  |  ![Screenshot 2023-05-30 170841](https://github.com/BlazeMedina/Final_Project/assets/119636655/d70f24d3-4e06-4391-bfda-589d19a8bed9)
 ## 
 
 ## Dashboard 
