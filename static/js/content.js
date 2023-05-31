@@ -1,3 +1,9 @@
+// On Page Load display instruction in MAIN section
+window.onload = function pageLoad(){
+  console.log("Page Loaded");
+  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vS3up-GgsNfdQYGsBwFUHosR-Hr8q7uNVzdug-WBAUe6XLDQNR9p6unG3r9X8LXgReu0nGjd5EOeLHa/pub?embedded=true"></iframe>';
+};
+
 // Get data on activationBut click
 function getValues() {
   // Create an array to store the values of all inputs.
@@ -57,7 +63,7 @@ document.getElementById("activationBut").addEventListener("click", function(){
       if (pred == 0){
         document.getElementById("main").innerHTML='<img src="static/images/durham_tp_img.png" alt="Durham County" style="width: 300px; height: 350px;" >';
       } else if (pred == 1){
-        document.getElementById("main").innerHTML='<img src="static/images/wake_img.png" alt="Wake County" style="width: 300px; height: 350px;" >';
+        document.getElementById("main").innerHTML='<img src="static/images/wake_img.jpg" alt="Wake County" style="width: 300px; height: 350px;" >';
       } else {
         document.getElementById("main").innerHTML='We had a problem predicting which county the property resides in. :-(';
       }
@@ -67,9 +73,7 @@ document.getElementById("activationBut").addEventListener("click", function(){
 /// Project Summary button 
 document.getElementById("summaryBut").addEventListener("click", function(){
   console.log("Summary button pressed");
-  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vSQDt1tI_6yxKykMS1eFoWHlmMWeg256Yya0HC4VaJoBRzVcASLRpe5RhjYqYHa4CVg6gPYRMEqy7Dc/pub?embedded=true"></iframe>';
-  //clearContents();
-  //buildCharts(curSample, "summary");
+  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" scrolling="yes" src="https://docs.google.com/document/d/e/2PACX-1vSQDt1tI_6yxKykMS1eFoWHlmMWeg256Yya0HC4VaJoBRzVcASLRpe5RhjYqYHa4CVg6gPYRMEqy7Dc/pub?embedded=true"></iframe>';
 });
 
 /// Display Sample Data
@@ -78,16 +82,22 @@ document.getElementById("sampleBut").addEventListener("click", function(){
   document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRc8aA7OlRit6w4LB9LpXJ9VKhUtpwuLVEsyKjPDenXp4BT2twRBvxbb2g3lDpDOPp97afcXrvLIwiN/pubhtml?gid=0&single=true"></iframe>';
 });
 
+/// Display the Data Analysis 
+document.getElementById("plotBut").addEventListener("click", function(){
+  console.log("Data Analysis button pressed");
+  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vRt_OXZbrPhsBLGAJXG3IVvJ7z2MwgjUe-CNgquLYyBZn6ueQBKbBEUrnYHpzlu1vxf3BFtyr_mWXDe/pub?embedded=true"></iframe>';
+});
+
 ///Display Explanation of Machine Learning
 document.getElementById("mlBut").addEventListener("click", function(){
   console.log("ML button pressed");
   document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vTVCIvvQ4v9_gTvUswIAKu4FfLunutayul7jIdEd5y1X37Da5uilExomKFRxUazR1oKAK51f_G5VyPL/pub?embedded=true"></iframe>';
-  //buildCharts(curSample, "bub");
 });
 
-/// Display the Map Plot of Similar Houses on the Market
-document.getElementById("plotBut").addEventListener("click", function(){
-  console.log("Map Plot button pressed");
+/// Display the Model 
+document.getElementById("modelBut").addEventListener("click", function(){
+  console.log("Model button pressed");
+  document.getElementById("main").innerHTML='<iframe width="900" height="550" frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vQ8ChYUHq85vy8hQKXLMq0iJEeKRr7CTIE_HEzXB2TMZKmp5GN7Jqvq48bZjsbUeQmYf8sWJ1WHcvZH/pub?embedded=true"></iframe>';
 });
 
 /// Information About the Team
