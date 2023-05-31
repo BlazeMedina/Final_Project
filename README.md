@@ -1,6 +1,5 @@
 # Capstone Project - Property Location Classification
 
-## Presentation 1
 ### Selected Topic 
 The purpose of our project is to analyze real estate data from two NC counties, Wake and Durham, to determine if there are distinguishable property differences in each county.
 
@@ -23,10 +22,11 @@ The following fields were used to determine potential influence on the property 
 - Bedroom Count
 - Bathroom Count
 - Area Lot Size
+- Property Type
 
 ### Questions We Hope to Answer
-Are we able to predict the county location of a house based on certain property parameters? <br />
-Are there certain parameters of a property distinguishable by county?
+Are we able to predict the county location of a house based on certain property features? <br />
+Are there certain features of a property distinguishable by county?
 
 ## Team Dymanic
 ### Communication Protocols
@@ -51,7 +51,7 @@ Need to start thinking about what important features do we want our audience to 
 Need to finish loading the data into the database and connect it to our machine learning model & other notebooks. <br />
 
 - Segment 3: <br />
-For 05/25 Segment 3 Presentation, we need to add the additional slides and assign speaking roles
+For 06/1 Segment 3 Presentation, we need to add the additional slides and assign speaking roles
 
 ### Exisiting Challenges
 - Segment 1: <br />
@@ -63,9 +63,9 @@ Which machine learning model should we utilize for our data analysis? <br />
 Can we deploy our machine learning model to our HTML site and make it user interactive? <br />
 
 - Segment 3: <br />
-Can we present our project & deliverable all in six minutes?
+Fitting our presentation and dashboard presentation in a 7 minute window
 
-## Future Work
+### Future Work
 - Segment 1: <br />
 Meet as a team on 05/14 to prepare for Presentation 1 and Segment 1 turn in <br />
 Start working on Segment 2 requirements <br />
@@ -77,14 +77,12 @@ Divide up the remaining work to be prepared for Deliverable 2 turn in <br />
 Meet as a team 05/22 to discuss the what has been completed and the plan for the upcoming week <br />
 Meet as a team 05/24 to discuss updates and assign slides for Thursday's Segment 3 Presentation <br />
 
-
 - Segment 3: <br />
 Add the rest of the necessary slides to the Google slide deck <br />
 Finalize the dashboard <br />
 Finalize the readme
 Clean up the Github Repo
-Meet 05/31 to record presentation and dashboard use
- 
+
 
 ## List of Technologies
 
@@ -98,7 +96,7 @@ Meet 05/31 to record presentation and dashboard use
 
 **Machine Learning:** Scikit-Learn, sklearn.model_selection are the library used to perform data classification and Logistic Regression. We also used the TensorFlow import to create our deep learning model. Users will also need to pip install m2cgen to run our machine learning notebook.
 
-**Dashboard** HTML, CSS, & JavaScript 
+**Dashboard** HTML, CSS, JavaScript, & Tableau
 
 **Source Control** all code repository and readme files are stored in Github.
 
@@ -150,7 +148,5 @@ Alongside of the interactive tabs, we have a section where users can input prope
 
 ## Links:
 
-- Database Link:
 - Slide Deck Link: https://docs.google.com/presentation/d/1fuSEjlgvWbBRcpDQHJYFIET4RZRHzRyaqUyjunIX7c8/edit?usp=sharing
-- Team Google Doc: https://docs.google.com/document/d/164kIARKGBgcrHXU49Ajj9LOiWtrlebf3gR6RnERRuJ8/edit
 - Dashboard Link: https://blazemedina.github.io/Final_Project/
