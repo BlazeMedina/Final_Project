@@ -104,6 +104,45 @@ Clean up the Github Repo
 With the real estate data from Wake and Durham County, we created a database using PostGres and AWS that joined these datasets together. Using the AWS as the host, we were then able to connect our joined tables to our data exploratory and machine learning notebooks. <br />
 Once we were able to feed the data into the Jupyter Notebooks, we were able to determine what preprocessing was necessary. Once finished with preprocessing, we determined our features and target variables and split the data into testing and training sets. To help us determine the best machine learning model, we utilized the machine learning pipeline. Learning that the Random Forest Classifier is the best model, we created a dashboard to visually display our results. 
 
+## Data Analysis
+In the analysis of the data that selected for our project, we were looking to determine what trends may exist between the housing markets of Durham and Wake counties, as well as if there were any discernible differences in the housing prices between the two counties. To accomplish our data analysis we utilized the following tools Tableau and Jupyter Notebook; specifically Pandas and Matplotlib. The primary points we analyzed involved relationships between the data and their respective counties.
+
+### Jupyter Notebooks/Matplotlib Data Analysis
+- Property Value (Zestimate) to Living Space
+  - Most homes followed standard assumptions of with an increase property value there was also an uptick in the living space.
+  - Wake county’s home values compared to living space was more evenly distributed than Durham County, which was more clustered within a specific range.
+
+![Property_Value_vs_Living_Space_County_Comparison_Plot](https://github.com/BlazeMedina/Final_Project/blob/5c6f44715113c96d51bb01361c0557a330dfeef5/images/Property_Value_vs_Living_Space_County_Comparison_Plot.png)
+
+- Property Value (Zestimate) to Number of Bathrooms and Bedrooms
+  - 3D model allowed us to analyze potential overlap in bathrooms-to-bedrooms-price Zestimate and look for groupings.
+
+![Property_Value_to_Number_of_Bathrooms_to_Bedrooms](https://github.com/BlazeMedina/Final_Project/blob/1a814922323e36218264f9954fee58330aff1583/images/Property_Value_to_Number_of_Bathrooms_to_Bedrooms.png)
+
+- Living Area Sq Ft to Lot Area
+  - There does not appear to be any support for an assumption that the larger the lot, the larger the living area would be of the house.
+  - Homes primarily fell between a living area of 10000sq ft or less and .20 acres or less.
+
+![Living_Area_vs_Lot_Area_County_Comparison](https://github.com/BlazeMedina/Final_Project/blob/d64bd33d94ba27f69e7ebdfa20c9685266a0932d/images/Living_Area_vs_Lot_Area_County_Comparison_scatterplot.png)
+
+### Tableau Analysis
+- Raleigh-Durham House Availability by Zip Code
+  - Durham County, specifically zip code 27705 has the more concentrated amount of homes when compared with Wake County zip codes.
+  - Wake County’s homes are more widespread than Durham
+![Raleigh_Durham_House_Availability](https://github.com/BlazeMedina/Final_Project/blob/d64bd33d94ba27f69e7ebdfa20c9685266a0932d/images/RDU%20House%20Availability%20by%20Zip%20Code.png)
+
+- Raleigh-Durham Pricing
+  - Wake County has more houses at a higher price point than Durham County
+  - Durham has the most expensive house in our data
+![Raleigh_Durham_Pricing_Heat_Plot](https://github.com/BlazeMedina/Final_Project/blob/48bcff809e62a4ea1a6a2cca18453d80bc6f4b6e/images/Raleigh_Durham_Pricing_Heat_Plot.png)
+
+- Sales Prices vs Estimated Price
+  - From the years 2020-2023 the actual home sale price was relatively on par with the estimated price provided by Zillow; with a few exceptions
+  - 2020 saw the greatest disparity between sales estimates and sales price, with it being off an average of $200K
+  - 2021-2023 saw a reversal where home prices began to outpace the Zillow estimates on average
+![Sale_Price_vs_Zillow_Price](https://github.com/BlazeMedina/Final_Project/blob/48bcff809e62a4ea1a6a2cca18453d80bc6f4b6e/images/Sale%20Price%20vs%20Zillow%20Price.png)
+
+
 ## Machine Learning Model 
 ### Description of Preliminary Data Preprocessing
 To start the data preprocessing and cleaning phase of our project, we first had to address the "props.AreaUnit" series that contained the unit of measurement for the "props.lotAreaValue". In this column we had both square footage and acres. We decided to convert the entire series to acres. <br />
