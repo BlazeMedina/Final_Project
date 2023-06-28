@@ -45,7 +45,7 @@ document.getElementById("activationBut").addEventListener("click", function(){
 
     function splash(){
       document.getElementById("main").innerHTML='<img src="static/images/prediction_splash_3.png" alt="Drum roll" style="width: 900px; height: 400px;">';
-      setTimeout(function(){predict(args);}, 5000);
+      setTimeout(function(){predict(args);}, 3000);
     }
     //create function predict() to fit model with features 
     function predict(model_features){
